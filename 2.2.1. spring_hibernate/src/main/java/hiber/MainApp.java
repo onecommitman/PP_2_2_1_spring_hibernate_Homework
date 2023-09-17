@@ -11,8 +11,8 @@ import java.util.List;
 
 public class MainApp {
    public static void main(String[] args) throws SQLException {
-      AnnotationConfigApplicationContext context = 
-            new AnnotationConfigApplicationContext(AppConfig.class);
+      AnnotationConfigApplicationContext context =
+              new AnnotationConfigApplicationContext(AppConfig.class);
 
       UserService userService = context.getBean(UserService.class);
 
@@ -39,6 +39,7 @@ public class MainApp {
       System.out.println("-------------------------------RESULT-------------------------------");
       System.out.println("User, у которого модель авто " + testModel + ", а значение Series = " + testSeries + ":");
       System.out.println(user);
+      System.out.println("-------------------------------RESULT-------------------------------");
 
       context.close();
    }

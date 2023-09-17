@@ -24,7 +24,7 @@ public class User {
    private Car usersCar;
 
    public User() {}
-   
+
    public User(String firstName, String lastName, String email, Car car) {
       this.firstName = firstName;
       this.lastName = lastName;
